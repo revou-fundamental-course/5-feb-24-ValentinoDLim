@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konverter Suhu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="C:\Users\USER\.vscode\code\5-feb-24-ValentinoDLim\css\style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#news">Berita</a>
+        <div class="dropdown">
+          <button class="dropbtn">Social Media 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="https://www.instagram.com/gerorotech?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+            <a href="#">TikTok</a>
+          </div>
+        </div> 
+      </div>
+
+    <div class="container">
+        <div class="container_satu">
+            <h1>Program Membuat Konversi Temperatur Suhu</h1>
+            <div class="wadah">
+                    <label for="unit">Pilih Suhu :</label>
+                    <select id="unit" name="unit" onchange="updateSuhu()">
+                        <option value="celcius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                    </select>
+                <br>
+                    <label for="suhu">Suhu :</label>
+                    <input type="number" id="suhu" name="suhu" required>
+                <br>
+                    <button type="button" onclick="convert()">Konversi</button>
+                    <button type="reset" onclick="reset()">Reset</button>
+                <br>
+                    <label for="hasil">Hasil Konversi :</label>
+                    <input type="text" id="hasil" name="hasil" readonly>
+                <br>
+                    <label for="rumus">Rumus Konversi :</label>
+                    <input type="text" id="rumus" name="rumus" readonly>
+            </div>
+        </div>
+        <br><hr><br>
+        <div class="container_dua">
+            <h1>Cara Konversi Dari Celcius ke Fahrenheit</h1>
+            <p id="penjelasan"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Website are Made By Valentino D lim</p>
+    </footer>
+    <script src="C:\Users\USER\.vscode\code\5-feb-24-ValentinoDLim\js\script.js"></script>
+</body>
+</html>
